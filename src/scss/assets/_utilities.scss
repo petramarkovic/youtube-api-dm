@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  @include container;
+}
+
+.visualy-hidden {
+  @include no-display;
+}
+
+.visualy-hidden--desktop {
+  @media ($--large) {
+    @include no-display;
+  }
+}
+
+.visualy-hidden--tablet {
+  @media ($--medium) {
+    @include no-display;
+  }
+}
+
+.visualy-hidden--mobile {
+  @media ($--small) {
+    @include no-display;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.color-primary {
+  color: $primary-color;
+}
+
+.color-secondary {
+  color: $secondary-color;
+}
+
+.color-ternary {
+  color: $ternary-color;
+}
+
+.bg-dark {
+  background-color: $bg-dark;
+}
+
+.bg-white {
+  background-color: $white-color;
+}
+
+.bg-primary {
+  background-color: $bg-primary;
+}
+
+.bg-secondary {
+  background-color: $bg-secondary;
+}
+
+.bg-ternary {
+  background-color: $ternary-color;
+}
